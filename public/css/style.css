@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+    
+}
+.titule{
+    font-size: 24px;
+}
+.banner{
+    width: 100%;
+
+}
+.banner img{
+     width: 100%;
+}
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+.copy-header{
+    font-weight: 400px;
+    text-align: center;
+}
+.articulos{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.card{
+    width: 80%;
+    border: 1px #ccc;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 5px;
+    margin: 10px;
+
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripcion{
+    font-size: 16px;
+}
+.card img{
+    width: 100%;
+    border-bottom: solid 1px #39b54a ;
+}
+.fa-bars{
+    background-color: #1259c3;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.hamburguesa{
+    text-align: center;
+}
+@media(min-width:460px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 35%;
+    }
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    background-color: #b1b1b1;
+    padding: 20px;
+    width: 500px;
+}
+.button{
+    background-color: #41403c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: #f5f0f0;
+    cursor: pointer;
+}
+.formulario input{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+}
+.usuario{
+    padding: 5px;
+}
+.fa-gift{
+    text-align: center;
+}
+.bottomHam{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.logo{
+    width: 45%;
+}
+
+.truck{
+    text-align: right;
+}
+.bottomHam ul{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+.bottomHam a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+@media(min-width:460px){
+    
+}
+
+@media(min-width:768px){
+    .left-navbar{
+        border-bottom: 2px red;
+        display: flex;
+        padding: 8px;
+    }
+    
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+}
+
+
+/*.bottomHam {
+    display: none;
+}
