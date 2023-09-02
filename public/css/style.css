@@ -25,6 +25,7 @@ header{
 .copy-header{
     font-weight: 400px;
     text-align: center;
+   
 }
 .articulos{
     text-align: center;
@@ -116,14 +117,17 @@ header{
 .logo{
     width: 45%;
 }
-
+.copy-header{
+    display: flex;
+    justify-content: space-between;
+}
 .truck{
     text-align: right;
 }
 .bottomHam ul{
     list-style: none;
-    margin: 0;
-    padding: 5px;
+    margin: 10px;
+    
 }
 .bottomHam a{
     text-decoration: none;
@@ -132,8 +136,17 @@ header{
     padding: 5px 0;
     font-size: 17px;
 }
-@media(min-width:460px){
-    
+@media(min-width:481px){
+    .bottomHam{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+@media(max-width:440px){
+    .bottomHam{
+        display: none;
+    }
 }
 
 @media(min-width:768px){
@@ -145,11 +158,70 @@ header{
     
     .copy-header{
         max-width: 350px;
-        text-align: right;
+        text-align:center;
+        display: flex;
     }
-}
+    .fa-bars{
+        display: none;
+    }
+    .right-navbar{
+         border-bottom: 2px red;
+        display: flex;
+        padding: 8px;
+    }
+    .arriba{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-
-/*.bottomHam {
-    display: none;
 }
+@media(min-width:441px){
+.hamburguesa{
+    display:none;
+}
+}
+li{
+    display: flex;
+    padding: 13px;
+}
+.right-navbar li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Añade margen inferior entre los elementos */
+}
+.right-navbar a {
+    display: flex;
+    align-items: center;
+}
+.right-navbar i {
+    margin-left: 5px; /* Añade espacio entre el texto del enlace y el icono */
+}
+footer {
+    text-align: center; /* Centra el texto y otros elementos en línea */
+  }
+  .footer {
+    display: inline-block; 
+    text-align: left; 
+    margin: 0 auto; 
+    max-width: 800px; 
+  }
+  
+  .fa-credit-card {
+    font-size: 34px; 
+    color: #1259c3;
+  }
+  .fa-gift {
+    font-size: 34px; 
+    color: #1259c3;
+  }
+  .fa-truck-fast{
+    font-size: 34px; 
+    color: #1e9406;
+  }
+  .fa-lock{
+    font-size: 34px; 
+    color: #1259c3;
+  }
+
